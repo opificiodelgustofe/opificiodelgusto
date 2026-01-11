@@ -33,12 +33,12 @@ body, html {
   color: #313131;
 }
 
-/* --- Effetto Parallasse --- */
+/** --- Effetto Parallasse --- 
 .parallax {
-  /* immagine di sfondo fissa */
+  /* immagine di sfondo fissa 
   background-image: url('miao2.jpg');
   min-height: 400px;
-  background-attachment: fixed;  /* 🔥 qui avviene il parallasse */
+  background-attachment: fixed;  /* 🔥 qui avviene il parallasse 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,7 +48,7 @@ body, html {
   background-image: url('demo.jpg');
 }
 
-/* --- Hero con parallasse iniziale --- */
+/* --- Hero con parallasse iniziale --- **/
 @media (max-width: 768px) {
   .hero {
     min-height: 100svh; /* migliore su mobile */
@@ -65,7 +65,7 @@ body, html {
 }
 
 .hero {
-  background-image: url('miao.jpg');
+  background-image: url('logo.jpeg');
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -111,7 +111,6 @@ footer {
 
 .imgchisiamo{
   position: relative;
-  background-image: url('/img1.jpeg');
 }
 
 .imgvini{
