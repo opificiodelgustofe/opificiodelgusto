@@ -49,6 +49,21 @@ body, html {
 }
 
 /* --- Hero con parallasse iniziale --- */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 100svh; /* migliore su mobile */
+    padding: 40px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
 .hero {
   background-image: url('miao.jpg');
   height: 100vh;
