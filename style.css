@@ -65,18 +65,19 @@ body, html {
 }
 
 .hero {
-  background-image: url('logo.jpeg');
+  background-image: url('logob.png');
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #fff;
   position: relative;
+  background-color: #313131;
 }
 
 .hero::after {
@@ -131,4 +132,9 @@ text-transform: uppercase; /* Make letters uppercase */
 
 .divWho{
   margin-left: 50px;
+}
+
+a{
+  text-decoration: none;
+  
 }
