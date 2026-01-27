@@ -14,7 +14,6 @@
 
 
 body, html {
-  height: 100%;
   font-family: "Poiret One", sans-serif;
   color: #222222;
   scroll-behavior: smooth;
@@ -66,7 +65,7 @@ body, html {
 
 .hero {
   background-image: url('logob.png');
-  height: 100%;
+  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -104,6 +103,7 @@ footer {
   margin-bottom: 0px;
   background: #333;
   color: #fff;
+  padding: 10px;
 }
 
 .imgchisiamo{
