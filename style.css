@@ -66,25 +66,21 @@ body, html {
 
 .hero {
   background-image: url('logob.png');
-  height: 100vh;
+  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  position: relative;
   background-color: #313131;
 }
-
+/*
 .hero::after {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.2 ); /* overlay scuro */
+  background: rgba(0, 0, 0, 0.2 );  overlay scuro 
 }
 
 .hero-content {
@@ -102,7 +98,7 @@ body, html {
   font-size: 1.2rem;
 }
 
-/* Footer */
+ Footer */
 footer {
   text-align: center;
   margin-bottom: 0px;
@@ -136,5 +132,5 @@ text-transform: uppercase; /* Make letters uppercase */
 
 a{
   text-decoration: none;
-  
+  outline-style: none;
 }
