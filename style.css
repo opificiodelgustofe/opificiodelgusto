@@ -74,6 +74,7 @@ p{
 .hero {
   border-radius: 30px;
   background-color: #292728;  
+  background-size: cover;
 }
 .hero-content {
   background-image: url('logo.jpeg');
