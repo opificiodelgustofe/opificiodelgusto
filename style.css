@@ -67,6 +67,10 @@ body, html {
 
 .hero {
   background-color: #292728;
+  background-attachment: fixed;
+  
+  background-size: cover;
+  
 }
 .hero-content {
   background-image: url('logo.jpeg');
