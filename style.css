@@ -16,9 +16,13 @@
 body, html {
   height: 100vh;
   font-family: "Poiret One", sans-serif;
-  color: #222222;
+  
   scroll-behavior: smooth;
   background-color: #292728;
+}
+
+.mbody{
+background-color: #fff;
 }
 
 p{
@@ -36,10 +40,29 @@ p{
   
   border-radius: 66px 66px 0 0;
 }
+.sectionantipasti {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #fff;
+  
+  border-radius: 66px 66px 0 0;
+}
+.sectionprimi{
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 66px 66px 0px 0px;
+}
+.sectionprimi h2{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  
+  color: #292728;
+}
 .section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #313131;
+  color: #292728;
 }
 
 /** --- Effetto Parallasse --- 
@@ -79,11 +102,10 @@ p{
 }
 .hero-content {
   background-image: url('logo.jpeg');
-  background-attachment: fixed;
   background-position: center;
-  height: 100vh;
-  background-repeat: no-repeat;
+  height: 100svh;
   background-size: contain;
+  background-repeat: no-repeat;
   display: flex;
 }
 /*
@@ -111,7 +133,7 @@ footer {
   text-align: center;
   
   margin-bottom: 0px;
-  background: #333;
+  background: #292728;
   color: #fff;
   padding: 10px;
 }
@@ -127,14 +149,28 @@ footer {
   margin-left: auto;
   max-width: 50%;
 }
-
+/*
 a{
   text-decoration: none;
   border-radius: 66px;
   padding: 13px 20px 13px 20px;
  
   font-size: 1.1rem;
-  color: #222222;
+  color: #292728;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px;
+  transition: all 0.6s;
+}
+
+
+*/
+.logoa{
+   text-decoration: none;
+  border-radius: 66px;
+  padding: 13px 20px 13px 20px;
+ 
+  font-size: 1.1rem;
+  color: #292728;
   font-weight: bold;
   box-shadow: 0px 4px 6px;
   transition: all 0.6s;
@@ -142,7 +178,28 @@ a{
 
 a:hover{
   background-color: #fff;
-  color: #222222;
+  color: #292728;
   box-shadow: 0px 1px 1px;
   transition: all 0.6s;
+}
+
+.menu{
+  color: #fff;
+  border-radius: 66px 66px 0px 0px;
+  padding-bottom: 60px;
+  padding-top: 0px;
+  font-size: 1.3rem;
+}
+
+.title{
+  background-image: url("logob.png");
+  
+  position: relative;
+  height: 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  color: #fff;
 }
