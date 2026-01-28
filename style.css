@@ -64,13 +64,14 @@ body, html {
 }
 
 .hero {
-  background-image: url('logob.png');
-  height: 100vh;
+  background-image: url('oglogo.jpg');
+  height: 100svh;
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
   display: flex;
-  
+  background-attachment: fixed;
+  background-position-x: center;
   background-color: #313131;
 }
 /*
