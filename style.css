@@ -80,7 +80,6 @@ p{
   background-image: url('logo.jpeg');
   background-position: center;
   height: 100vh;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
