@@ -79,6 +79,7 @@ p{
 }
 .hero-content {
   background-image: url('logo.jpeg');
+  background-attachment: fixed;
   background-position: center;
   height: 100vh;
   background-repeat: no-repeat;
