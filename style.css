@@ -70,7 +70,6 @@ body, html {
   background-repeat: no-repeat;
   background-size:cover;
   display: flex;
-  background-attachment: fixed;
   background-position-x: center;
   background-color: #313131;
 }
