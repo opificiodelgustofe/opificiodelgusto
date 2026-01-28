@@ -32,6 +32,8 @@ p{
   text-align: center;
   background-color: #fff;
   
+  
+  
   border-radius: 66px 66px 0 0;
 }
 .section h2 {
@@ -73,7 +75,7 @@ p{
 **/
 .hero {
   
-  
+  color: #fff;
 }
 .hero-content {
   background-image: url('logo.jpeg');
