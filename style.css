@@ -65,12 +65,11 @@ body, html {
 
 .hero {
   background-image: url('oglogo.jpg');
-  height: 100svh;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
   display: flex;
-  background-position-x: center;
   background-color: #313131;
 }
 /*
