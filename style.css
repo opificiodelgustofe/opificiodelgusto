@@ -22,7 +22,7 @@ body, html {
 }
 
 .mbody{
-background-color: #fff;
+  background-color: #fff;
 }
 
 p{
@@ -35,16 +35,12 @@ p{
   padding: 80px 20px;
   text-align: center;
   background-color: #fff;
-  
-  
-  
   border-radius: 66px 66px 0 0;
 }
 .sectionantipasti {
   padding: 80px 20px;
   text-align: center;
   background-color: #fff;
-  
   border-radius: 66px 66px 0 0;
 }
 .sectionprimi{
@@ -56,7 +52,6 @@ p{
 .sectionprimi h2{
   font-size: 2rem;
   margin-bottom: 20px;
-  
   color: #292728;
 }
 .section h2 {
@@ -96,10 +91,11 @@ p{
   }
 }
 **/
+
 .hero {
-  
   color: #fff;
 }
+
 .hero-content {
   background-image: url('logo.jpeg');
   background-position: center;
@@ -115,8 +111,6 @@ p{
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(0, 0, 0, 0.2 );  overlay scuro 
 }
-
-
 */
 .hero-content h1 {
   font-size: 3rem;
@@ -131,7 +125,6 @@ p{
 /* Footer */
 footer {
   text-align: center;
-  
   margin-bottom: 0px;
   background: #292728;
   color: #fff;
@@ -165,10 +158,9 @@ a{
 
 */
 .logoa{
-   text-decoration: none;
+  text-decoration: none;
   border-radius: 66px;
   padding: 13px 20px 13px 20px;
- 
   font-size: 1.1rem;
   color: #292728;
   font-weight: bold;
@@ -193,7 +185,6 @@ a:hover{
 
 .title{
   background-image: url("logob.png");
-  
   position: relative;
   height: 20%;
   background-repeat: no-repeat;
