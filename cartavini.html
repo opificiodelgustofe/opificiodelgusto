@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta dei Vini - Opificio del Gusto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #fcfcf9;
+            color: #1f2121;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #1f2121;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #626c71;
+            max-width: 700px;
+            margin: 20px auto 0;
+            font-size: 0.95rem;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #a7a9a9;
+        }
+
+        .subsection-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin: 30px 0 20px;
+            color: #626c71;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background: #ffffff;
+        }
+
+        thead {
+            background: #1f2121;
+            color: #ffffff;
+        }
+
+        th {
+            padding: 15px 12px;
+            text-align: left;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            background-color:#ffffff ;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #f5f5f5;
+            font-size: 0.95rem;
+        }
+
+        tbody tr:hover {
+            background: #fcfcf9;
+        }
+
+        .wine-name {
+            font-weight: 600;
+            color: #1f2121;
+        }
+
+        .producer {
+            color: #626c71;
+            font-size: 0.9rem;
+        }
+
+        .grapes {
+            color: #777c7c;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+
+        .price {
+            font-weight: 600;
+            color: #21808d;
+            white-space: nowrap;
+        }
+
+        .vintage {
+            color: #626c71;
+            font-size: 0.9rem;
+        }
+
+        .by-glass-section {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .by-glass-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .glass-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .glass-item {
+            padding: 15px;
+            border: 1px solid #f5f5f5;
+            border-radius: 6px;
+            transition: border-color 0.2s;
+        }
+
+        .glass-item:hover {
+            border-color: #21808d;
+        }
+
+        .glass-wine {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #1f2121;
+        }
+
+        .glass-producer {
+            font-size: 0.85rem;
+            color: #626c71;
+            margin-bottom: 8px;
+        }
+
+        .glass-price {
+            font-weight: 600;
+            color: #21808d;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .section-title {
+                font-size: 1.4rem;
+            }
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th, td {
+                padding: 10px 8px;
+            }
+
+            th:nth-child(3),
+            td:nth-child(3) {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Carta dei Vini</h1>
+            <div class="quote">
+                "È l'ora di ubriacarsi! Per non essere gli schiavi martirizzati del Tempo.<br>
+                Ubriacatevi! Ubriacatevi sempre!<br>
+                Del vino, di poesia o della virtù, a vostro gusto."<br>
+                <strong>— Charles Baudelaire</strong>
+            </div>
+        </header>
+
+        <!-- Vini al Calice -->
+        <div class="by-glass-section">
+            <h2 class="by-glass-title">Vini al Calice</h2>
+            <div class="glass-grid" id="vini-calice"></div>
+        </div>
+
+        <!-- Champagne -->
+        <section class="section">
+            <h2 class="section-title">Champagne</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vino</th>
+                        <th>Produttore / Zona</th>
+                        <th>Anno</th>
+                        <th>Vitigni</th>
+                        <th>Prezzo</th>
+                    </tr>
+                </thead>
+                <tbody id="champagne"></tbody>
+            </table>
+        </section>
+
+        <!-- Crémant -->
+        <section class="section">
+            <h2 class="section-title">Crémant</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vino</th>
+                        <th>Produttore / Zona</th>
+                        <th>Anno</th>
+                        <th>Vitigni</th>
+                        <th>Prezzo</th>
+                    </tr>
+                </thead>
+                <tbody id="cremant"></tbody>
+            </table>
+        </section>
+
+        <!-- Bollicine Italiane -->
+        <section class="section">
+            <h2 class="section-title">Bollicine Italiane</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vino</th>
+                        <th>Produttore / Zona</th>
+                        <th>Anno</th>
+                        <th>Vitigni</th>
+                        <th>Prezzo</th>
+                    </tr>
+                </thead>
+                <tbody id="bollicine"></tbody>
+            </table>
+        </section>
+
+        <!-- Bianchi Italiani -->
+        <section class="section">
+            <h2 class="section-title">Bianchi Italiani</h2>
+            <div id="bianchi-italiani"></div>
+        </section>
+
+        <!-- Bianchi Esteri -->
+        <section class="section">
+            <h2 class="section-title">Bianchi Esteri</h2>
+            <div id="bianchi-esteri"></div>
+        </section>
+
+        <!-- Rossi Italiani -->
+        <section class="section">
+            <h2 class="section-title">Rossi Italiani</h2>
+            <div id="rossi-italiani"></div>
+        </section>
+
+        <!-- Rossi Esteri -->
+        <section class="section">
+            <h2 class="section-title">Rossi Esteri</h2>
+            <div id="rossi-esteri"></div>
+        </section>
+    </div>
+
+    <script>
+        const viniCalice = [
+            { nome: 'Open Dosaggio Zero', produttore: 'Solouva', prezzo: '€ 8' },
+            { nome: 'Trento DOC', produttore: 'Castel Noarna', prezzo: '€ 9' },
+            { nome: 'Piccolo Derthona', produttore: 'Vigneti Massa', prezzo: '€ 6' },
+            { nome: 'Gèss', produttore: 'Eredi di Cobelli Aldo', prezzo: '€ 7' },
+            { nome: '…di Gino', produttore: 'Fattoria San Lorenzo', prezzo: '€ 6' },
+            { nome: 'Sanzves', produttore: 'Tenuta Saiano', prezzo: '€ 6' },
+            { nome: 'Flavino', produttore: 'La Palazzetta', prezzo: '€ 6' }
+        ];
+
+        const champagne = [
+            { nome: 'Réserve Brut', produttore: 'BERECHE ET FILS, Montagne de Reims, Le Craon de Ludes', anno: '', vitigni: 'P. Nero, Chardonnay, Meunier', prezzo: '€ 120' },
+            { nome: 'Brut Transmission', produttore: 'VIRGINIE T., Montagne de Reims, Verzenay', anno: '', vitigni: 'P. Nero, Chardonnay, Meunier', prezzo: '€ 77' },
+            { nome: 'Les Meslaines X-Brut G. Cru', produttore: 'LAMIABLE, Montagne de Reims, Tours-sur-Marne', anno: '2016', vitigni: 'P. Nero', prezzo: '€ 94' },
+            { nome: 'Les Arpents', produttore: 'MAURICE CHOPPIN, Vallée de la Marne, Damery', anno: '', vitigni: 'Meunier, Chardonnay, P. Nero', prezzo: '€ 90' },
+            { nome: 'La Trempette', produttore: 'AURELIEN LEMAIRE, Vallée de la Marne, Boursault', anno: '', vitigni: 'Meunier, P. Nero, Chardonnay', prezzo: '€ 140' },
+            { nome: 'Original Oger Grand Cru', produttore: 'VAUVERSIN, Cote de Blancs, Oger', anno: '', vitigni: 'Chardonnay', prezzo: '€ 96' }
+        ];
+
+        const cremant = [
+            { nome: 'Crémant du Jura Brut Nature', produttore: 'DOMAINE PIGNIER, Jura, Cotes du Jura', anno: '', vitigni: 'Chardonnay, P. Nero', prezzo: '€ 52' },
+            { nome: 'Crémant d\'Alsace Extra Brut', produttore: 'ANDRE ET LUCAS RIEFFEL, Alsazia, Mittelbergheim', anno: '2022', vitigni: 'Riesling, Auxerrois, P.Gris', prezzo: '€ 46' },
+            { nome: 'Mr. Pink', produttore: 'ANDRE ET LUCAS RIEFFEL, Alsazia, Mittelbergheim', anno: '2022', vitigni: 'P. Nero', prezzo: '€ 52' },
+            { nome: 'Lune Noire Extra Brut', produttore: 'DOMAINE OINEA, Grecia, Aminteo', anno: '2021', vitigni: 'Xinomavro', prezzo: '€ 42' },
+            { nome: 'Lune Rosè Extra Brut', produttore: 'DOMAINE OINEA, Grecia, Aminteo', anno: '2021', vitigni: 'Xinomavro', prezzo: '€ 42' }
+        ];
+
+        const bollicine = [
+            { nome: 'Prosecco Conegliano Valdobbiadene DOCG Con alti', produttore: 'BELLENDA, Vittorio Veneto (TV)', anno: '', vitigni: 'Glera', prezzo: '€ 27' },
+            { nome: 'Prosecco Conegliano Valdobbiadene DOCG Sei Uno X-Brut', produttore: 'BELLENDA, Vittorio Veneto (TV)', anno: '', vitigni: 'Glera', prezzo: '€ 33' },
+            { nome: 'Open Dosaggio Zero', produttore: 'SOLOUVA, Erbusco (BS)', anno: '', vitigni: 'P. Nero', prezzo: '€ 38' },
+            { nome: 'Franciacorta Brut', produttore: 'SOLOUVA, Erbusco (BS)', anno: '', vitigni: 'Chardonnay', prezzo: '€ 41' },
+            { nome: 'Trento DOC Extra Brut', produttore: 'CASTEL NOARNA, Nogaredo (TN)', anno: '', vitigni: 'Chardonnay', prezzo: '€ 47' },
+            { nome: 'Terzavia Brut Nature', produttore: 'MARCO DE BARTOLI, Samperi-Marsala (TP)', anno: '', vitigni: 'Grillo', prezzo: '€ 52' }
+        ];
+
+        const bianchiItaliani = {
+            'EMILIA ROMAGNA': [
+                { nome: 'Tre Uve', produttore: 'CORTE MADONNINA, Codigoro (FE)', anno: '', vitigni: 'Incrocio Manzoni, Sauvignon, Trebbiano', prezzo: '€ 24' },
+                { nome: 'L\'Animo', produttore: 'TENUTA SAIANO, Poggio Torriana (RN)', anno: '', vitigni: 'Grechetto Gentile', prezzo: '€ 34' }
+            ],
+            'PIEMONTE': [
+                { nome: 'Piccolo Derthona', produttore: 'VIGNETI MASSA, Monleale (AL)', anno: '', vitigni: 'Timorasso', prezzo: '€ 29' },
+                { nome: 'Derthona Timorasso', produttore: 'VIGNETI MASSA, Monleale (AL)', anno: '', vitigni: 'Timorasso', prezzo: '€ 43' }
+            ],
+            'LOMBARDIA': [
+                { nome: 'Riserva del Lupo', produttore: 'CA\' LOJERA, Rovizza di Sirmione (BS)', anno: '', vitigni: 'Turbiana di Lugana', prezzo: '€ 39' }
+            ],
+            'TRENTINO ALTO ADIGE': [
+                { nome: 'Aromatta', produttore: 'VILLA PERSANI, Pressano (TN)', anno: '', vitigni: 'Vitigni Piwi', prezzo: '€ 31' },
+                { nome: 'Gèss', produttore: 'EREDI DI COBELLI ALDO, Sorni di Lavis (TN)', anno: '', vitigni: 'Gewurtztraminer', prezzo: '€ 37' },
+                { nome: 'Riesling', produttore: 'HOCHKLAUS, Cornedo (BZ)', anno: '', vitigni: 'Riesling', prezzo: '€ 58' }
+            ],
+            'FRIULI VENEZIA GIULIA': [
+                { nome: 'Friulano', produttore: 'RONCO SEVERO, Prepotto (UD)', anno: '', vitigni: 'Friulano', prezzo: '€ 50' },
+                { nome: 'Ribolla Gialla', produttore: 'RONCO SEVERO, Prepotto (UD)', anno: '', vitigni: 'Ribolla Gialla', prezzo: '€ 50' }
+            ],
+            'TOSCANA': [
+                { nome: 'Forestieri Bianco', produttore: 'I FORESTIERI, Roccastrada (GR)', anno: '', vitigni: 'Trebbiano, Malvasia, Vermentino', prezzo: '€ 27' }
+            ],
+            'ABRUZZO': [
+                { nome: 'Apollo', produttore: 'AUSONIA, Teramo (TE)', anno: '', vitigni: 'Trebbiano', prezzo: '€ 28' }
+            ],
+            'MARCHE': [
+                { nome: 'Pistillo', produttore: 'PODERI SAN LAZZARO, Offida (AP)', anno: '', vitigni: 'Pecorino', prezzo: '€ 30' },
+                { nome: '…di Gino', produttore: 'FATTORIA SAN LORENZO, Montecarotto (AN)', anno: '', vitigni: 'Verdicchio', prezzo: '€ 29' },
+                { nome: 'Campo delle Oche', produttore: 'FATTORIA SAN LORENZO, Montecarotto (AN)', anno: '', vitigni: 'Verdicchio', prezzo: '€ 40' }
+            ],
+            'LAZIO': [
+                { nome: 'Malvasia bianca di Candia', produttore: 'IL SAMBUCO, Lanuvio (RM)', anno: '', vitigni: 'Malvasia', prezzo: '€ 32' }
+            ],
+            'SICILIA': [
+                { nome: 'Sole e Vento', produttore: 'MARCO DE BARTOLI, Samperi-Marsala (TP)', anno: '', vitigni: 'Grillo, Zibibbo', prezzo: '€ 35' },
+                { nome: 'Sketta', produttore: 'CANTINA MARILINA, Noto (SR)', anno: '', vitigni: 'Grecanico', prezzo: '€ 29' },
+                { nome: 'Tenuta Valdichiesa', produttore: 'SALVATORE D\'AMICO, Isola di Salina (ME)', anno: '', vitigni: 'Catarratto, Inzolia, Malvasia', prezzo: '€ 40' }
+            ]
+        };
+
+        const bianchiEsteri = {
+            'BORGOGNA': [
+                { nome: 'Chablis', produttore: 'POMMIER, Chablis, Poincy', anno: '', vitigni: 'Chardonnay', prezzo: '€ 52' }
+            ],
+            'VALLE DELLA LOIRA': [
+                { nome: 'Muscadet Indigéne', produttore: 'NICOLAS REAU, Sainte-Redagonde Anjou', anno: '', vitigni: 'Melon de Bourgogne', prezzo: '€ 38' },
+                { nome: 'Clos de Treilles', produttore: 'NICOLAS REAU, Sainte-Redagonde Anjou', anno: '', vitigni: 'Chenin', prezzo: '€ 47' }
+            ]
+        };
+
+        const rossiItaliani = {
+            'EMILIA ROMAGNA': [
+                { nome: 'Micrologus', produttore: 'CORTE MADONNINA, Codigoro (FE)', anno: '', vitigni: 'Merlot', prezzo: '€ 24' },
+                { nome: 'Sanzves', produttore: 'TENUTA SAIANO, Poggio Torriana (RN)', anno: '', vitigni: 'Sangiovese', prezzo: '€ 29' },
+                { nome: 'Cabernetico', produttore: 'TENUTA SAIANO, Poggio Torriana (RN)', anno: '', vitigni: 'Cabernet Franc', prezzo: '€ 34' }
+            ],
+            'PIEMONTE': [
+                { nome: 'Natalin', produttore: 'IULI, Montaldo di Cerrina (AL)', anno: '', vitigni: 'Grignolino', prezzo: '€ 38' },
+                { nome: 'Rossore', produttore: 'IULI, Montaldo di Cerrina (AL)', anno: '', vitigni: 'Barbera', prezzo: '€ 40' }
+            ],
+            'TOSCANA': [
+                { nome: 'Flavino', produttore: 'LA PALAZZETTA, Montalcino (SI)', anno: '', vitigni: 'Sangiovese', prezzo: '€ 26' },
+                { nome: 'Rosso di Montalcino', produttore: 'LA PALAZZETTA, Montalcino (SI)', anno: '', vitigni: 'Sangiovese', prezzo: '€ 39' },
+                { nome: 'Girotondo Rosso', produttore: 'I FORESTIERI, Roccastrada (GR)', anno: '', vitigni: 'Sangiovese, Malvasia', prezzo: '€ 34' }
+            ],
+            'TRENTINO ALTO ADIGE': [
+                { nome: 'Dorothy', produttore: 'VILLA PERSANI, Pressano (TN)', anno: '', vitigni: 'Schiava', prezzo: '€ 31' }
+            ]
+        };
+
+        const rossiEsteri = {
+            'BREM SUR MER': [
+                { nome: 'Vin d\'Antoine', produttore: 'DOMAINE SAINT NICOLAS', anno: '', vitigni: 'Gamay, Negrette', prezzo: '€ 34' }
+            ]
+        };
+
+        function renderGlassWines() {
+            const container = document.getElementById('vini-calice');
+            viniCalice.forEach(vino => {
+                const div = document.createElement('div');
+                div.className = 'glass-item';
+                div.innerHTML = `
+                    <div class="glass-wine">${vino.nome}</div>
+                    <div class="glass-producer">${vino.produttore}</div>
+                    <div class="glass-price">${vino.prezzo}</div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function renderTable(data, tbodyId) {
+            const tbody = document.getElementById(tbodyId);
+            data.forEach(vino => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td><span class="wine-name">${vino.nome}</span></td>
+                    <td><span class="producer">${vino.produttore}</span></td>
+                    <td><span class="vintage">${vino.anno}</span></td>
+                    <td><span class="grapes">${vino.vitigni}</span></td>
+                    <td><span class="price">${vino.prezzo}</span></td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function renderRegionalWines(data, containerId) {
+            const container = document.getElementById(containerId);
+            Object.keys(data).forEach(regione => {
+                const div = document.createElement('div');
+                div.innerHTML = `<h3 class="subsection-title">${regione}</h3>`;
+                
+                const table = document.createElement('table');
+                table.innerHTML = `
+                    <thead>
+                        <tr>
+                            <th>Vino</th>
+                            <th>Produttore / Zona</th>
+                            <th>Anno</th>
+                            <th>Vitigni</th>
+                            <th>Prezzo</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                `;
+                
+                const tbody = table.querySelector('tbody');
+                data[regione].forEach(vino => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td><span class="wine-name">${vino.nome}</span></td>
+                        <td><span class="producer">${vino.produttore}</span></td>
+                        <td><span class="vintage">${vino.anno}</span></td>
+                        <td><span class="grapes">${vino.vitigni}</span></td>
+                        <td><span class="price">${vino.prezzo}</span></td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+                
+                div.appendChild(table);
+                container.appendChild(div);
+            });
+        }
+
+        renderGlassWines();
+        renderTable(champagne, 'champagne');
+        renderTable(cremant, 'cremant');
+        renderTable(bollicine, 'bollicine');
+        renderRegionalWines(bianchiItaliani, 'bianchi-italiani');
+        renderRegionalWines(bianchiEsteri, 'bianchi-esteri');
+        renderRegionalWines(rossiItaliani, 'rossi-italiani');
+        renderRegionalWines(rossiEsteri, 'rossi-esteri');
+    </script>
+</body>
+</html>
