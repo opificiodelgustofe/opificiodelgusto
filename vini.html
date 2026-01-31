@@ -28,9 +28,42 @@
     
     <div class="by-glass-section">
             <h2 class="">Champagne</h2>
-            <div class="glass-grid" id="vini-calice"></div>
+            <div class="glass-grid" id="champagne"></div>
         </div>
-        <!-- 
+        <div class="by-glass-section">
+            <h2 class="">Cremant</h2>
+            <div class="glass-grid" id="cremant"></div>
+        </div>
+         <div class="by-glass-section">
+            <h2 class="">Bollicine</h2>
+            <div class="glass-grid" id="bollicine"></div>
+        </div>
+        
+        <p><a href="https://drive.google.com/file/d/1SzshUpLuMcGaymmN-ZUHCQ6ZFQIi3BNT/view?usp=drive_link" class="logoa">Altri vini</a></p> 
+<!-- 
+          
+        <section class="section">
+            <h2 class="section-title" >Bianchi Italiani</h2>
+            <div id="tabella-vini">
+            <div id="bianchi-italiani"></div></div>
+        </section>
+
+         
+        <section class="section">
+            <h2 class="section-title">Bianchi Esteri</h2>
+            <div id="bianchi-esteri"></div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Rossi Italiani</h2>
+            <div id="rossi-italiani"></div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Rossi Esteri</h2>
+            <div id="rossi-esteri"></div>
+        </section>
+        
 <table id="tabella-vini">
     <thead>
       <tr>
@@ -202,7 +235,49 @@
                 container.appendChild(div);
             });
         }
-
+        function renderBottleWines() {
+            const container = document.getElementById('champagne');
+            champagne.forEach(vino => {
+                const div = document.createElement('div');
+                div.className = 'glass-item';
+                div.innerHTML = `
+                    <div class="glass-wine" style="text-align: left;">${vino.nome}</div>
+                    <div class="glass-producer" style="text-align: left;"><b>Produttore: </b>${vino.produttore}</div>
+                    <div class="glass-producer" style="text-align: left;"><b>Vitigno: </b>${vino.vitigni}</div>
+                    <div class="glass-price" style="text-align: right;">${vino.prezzo}</div>
+                `;
+                container.appendChild(div);
+            });
+        }
+        function renderBottleWinesCremant() {
+            const container = document.getElementById('cremant');
+            cremant.forEach(vino => {
+                const div = document.createElement('div');
+                div.className = 'glass-item';
+                div.innerHTML = `
+                    <div class="glass-wine" style="text-align: left;">${vino.nome}</div>
+                    <div class="glass-producer" style="text-align: left;"><b>Produttore: </b>${vino.produttore}</div>
+                    <div class="glass-producer" style="text-align: left;"><b>Vitigno: </b>${vino.vitigni}</div>
+                    <div class="glass-price" style="text-align: right;">${vino.prezzo}</div>
+                `;
+                container.appendChild(div);
+            });
+        }
+        function renderBottleWinesBollicine() {
+            const container = document.getElementById('bollicine');
+            bollicine.forEach(vino => {
+                const div = document.createElement('div');
+                div.className = 'glass-item';
+                div.innerHTML = `
+                    <div class="glass-wine" style="text-align: left;">${vino.nome}</div>
+                    <div class="glass-producer" style="text-align: left;"><b>Produttore: </b>${vino.produttore}</div>
+                    <div class="glass-producer" style="text-align: left;"><b>Vitigno: </b>${vino.vitigni}</div>
+                    <div class="glass-price" style="text-align: right;">${vino.prezzo}</div>
+                `;
+                container.appendChild(div);
+            });
+        }
+/*
         function renderTable(data, tbodyId) {
             const tbody = document.getElementById(tbodyId);
             data.forEach(vino => {
@@ -255,15 +330,20 @@
                 container.appendChild(div);
             });
         }
-
+*/
         renderGlassWines();
+        renderBottleWines();
+        renderBottleWinesCremant();
+        renderBottleWinesBollicine();
+
+        /*
         renderTable(champagne, 'champagne');
         renderTable(cremant, 'cremant');
         renderTable(bollicine, 'bollicine');
         renderRegionalWines(bianchiItaliani, 'bianchi-italiani');
         renderRegionalWines(bianchiEsteri, 'bianchi-esteri');
         renderRegionalWines(rossiItaliani, 'rossi-italiani');
-        renderRegionalWines(rossiEsteri, 'rossi-esteri');
+        renderRegionalWines(rossiEsteri, 'rossi-esteri'); */
     </script>
 </body>
 </html>
