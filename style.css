@@ -194,3 +194,146 @@ a:hover{
   align-items: center;
   color: #fff;
 }
+
+#tabella-vini{
+  width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background: #ffffff;
+    align-items: center;
+
+}
+
+thead {
+    background: #ffffff;
+    color: #000000;
+    align-self: center;
+}
+
+th {
+    padding: 15px 12px;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background-color:#ffffff ;
+    border-radius: 33px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 0.95rem;
+    
+    text-align: left;
+}
+
+tbody tr:hover {
+    background: #fcfcf9;
+    border-radius: 33px;
+    
+    text-align: left;
+}
+
+
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #a7a9a9;
+        }
+
+        .subsection-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin: 30px 0 20px;
+            color: #626c71;
+        }
+
+
+        .wine-name {
+            font-weight: 600;
+            color: #000000;
+        }
+
+        .producer {
+            color: #626c71;
+            font-size: 1rem;
+        }
+
+        .grapes {
+            color: #777c7c;
+            font-style: italic;
+            font-size: 1rem;
+        }
+
+        .price {
+            font-weight: 600;
+            color: #3a3a3a;
+            white-space: nowrap;
+        }
+
+        .vintage {
+            color: #626c71;
+            font-size: 1rem;
+        }
+
+        .by-glass-section {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 66px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .by-glass-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .glass-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .glass-item {
+            padding: 15px;
+            border: 1px solid #f5f5f5;
+            border-radius: 33px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: border-color 0.8s;
+        }
+
+        .glass-item:hover {
+            border-color: #a2b7d4;
+            background: #f9fafc;
+        }
+
+        .glass-wine {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #000000;
+        }
+
+        .glass-producer {
+            font-size: 0.85rem;
+            color: #626c71;
+            margin-bottom: 8px;
+        }
+
+        .glass-price {
+            font-weight: 600;
+            color: #3b3b3b;
+            font-size: 1.1rem;
+        }
