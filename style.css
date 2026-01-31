@@ -166,14 +166,14 @@ a{
   font-size: 1.1rem;
   color: #292728;
   font-weight: bold;
-  box-shadow: 0px 4px 6px;
+  box-shadow: 0px 4px 6px rgba(51, 75, 107, 0.4);
   transition: all 0.6s;
 }
 
 a:hover{
   background-color: #fff;
   color: #292728;
-  box-shadow: 0px 1px 1px;
+  box-shadow: 0px 1px 1px rgba(51, 75, 107, 0.4);
   transition: all 0.6s;
 }
 
