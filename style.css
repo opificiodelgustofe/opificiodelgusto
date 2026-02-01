@@ -1,3 +1,5 @@
+
+
 /* Reset */
 * {
   margin: 0;
@@ -6,17 +8,16 @@
 }
 
 .poiret-one-regular {
+  /* font-family: "Quicksand", sans-serif; */
   font-family: "Quicksand", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+  font-weight: 100;
   font-optical-sizing: auto;
 }
 
 
 body, html {
   height: 100vh;
-  font-family: "Poiret One", sans-serif;
-  
+  font-family: "Quicksand", sans-serif;
   scroll-behavior: smooth;
   background-color: #292728;
 }
@@ -50,15 +51,30 @@ p{
   border-radius: 66px 66px 0px 0px;
 }
 .sectionprimi h2{
+  font-family: "Poiret One", sans-serif;
   font-size: 2rem;
   margin-bottom: 20px;
   color: #292728;
 }
 .section h2 {
+  font-family: "Poiret One", sans-serif;
   font-size: 2rem;
   margin-bottom: 20px;
   color: #292728;
 }
+.who{
+  margin: 0 auto;
+  width:70vw;
+  display: block;
+  font-size: 1.13rem;
+}
+
+@media (max-width: 600px) {
+  .who{
+    width: 90vw;
+  }
+}
+
 
 /** --- Effetto Parallasse --- 
 .parallax {
@@ -113,6 +129,7 @@ p{
 }
 */
 .hero-content h1 {
+  font-family: "Poiret One", sans-serif;
   font-size: 3rem;
   margin-bottom: 10px;
   text-shadow: 8px 6px 6px, rgba(0, 0, 0, 0.2 );
@@ -164,18 +181,20 @@ a{
   font-size: 1.1rem;
   color: #292728;
   font-weight: bold;
-  box-shadow: 0px 4px 6px;
+  box-shadow: 0px 4px 6px rgba(51, 75, 107, 0.4);
   transition: all 0.6s;
 }
 
 a:hover{
   background-color: #fff;
   color: #292728;
-  box-shadow: 0px 1px 1px;
+  box-shadow: 0px 1px 1px rgba(51, 75, 107, 0.4);
   transition: all 0.6s;
 }
 
 .menu{
+  
+  font-family: "Poiret One", sans-serif;
   color: #fff;
   border-radius: 66px 66px 0px 0px;
   padding-bottom: 60px;
@@ -184,6 +203,7 @@ a:hover{
 }
 
 .title{
+  font-family: "Poiret One", sans-serif;
   background-image: url("logob.png");
   position: relative;
   height: 20%;
@@ -194,8 +214,13 @@ a:hover{
   align-items: center;
   color: #fff;
 }
-
+table{
+  margin: 0 auto;
+  width: 100%;
+  align-self: center;
+}
 #tabella-vini{
+  margin: 0 auto;
   width: 80%;
     border-collapse: collapse;
     margin-bottom: 30px;
@@ -205,6 +230,9 @@ a:hover{
 }
 
 thead {
+  
+  margin: 0 auto;
+  width: 80%;
     background: #ffffff;
     color: #000000;
     align-self: center;
@@ -230,7 +258,7 @@ td {
 }
 
 tbody tr:hover {
-    background: #fcfcf9;
+    background: #f9fbfc;
     border-radius: 33px;
     
     text-align: left;
@@ -285,7 +313,7 @@ tbody tr:hover {
         }
 
         .by-glass-section {
-            background: #ffffff;
+            background: #fafafc;
             padding: 30px;
             border-radius: 66px;
             margin-bottom: 40px;
@@ -308,7 +336,11 @@ tbody tr:hover {
         }
 
         .glass-item {
-            padding: 15px;
+            padding-top: 20px;
+            padding-left: 18px;
+            padding-right: 18px;
+            padding-bottom: 20px;
+            background-color: #fff;
             border: 1px solid #f5f5f5;
             border-radius: 33px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -317,7 +349,7 @@ tbody tr:hover {
 
         .glass-item:hover {
             border-color: #a2b7d4;
-            background: #f9fafc;
+            background: #fff;
         }
 
         .glass-wine {
