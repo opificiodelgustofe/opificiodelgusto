@@ -115,6 +115,7 @@ p{
 }
 */
 .hero-content h1 {
+  font-family: "Poiret One", sans-serif;
   font-size: 3rem;
   margin-bottom: 10px;
   text-shadow: 8px 6px 6px, rgba(0, 0, 0, 0.2 );
@@ -178,6 +179,8 @@ a:hover{
 }
 
 .menu{
+  
+  font-family: "Poiret One", sans-serif;
   color: #fff;
   border-radius: 66px 66px 0px 0px;
   padding-bottom: 60px;
@@ -186,6 +189,7 @@ a:hover{
 }
 
 .title{
+  font-family: "Poiret One", sans-serif;
   background-image: url("logob.png");
   position: relative;
   height: 20%;
