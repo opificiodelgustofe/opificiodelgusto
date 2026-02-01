@@ -69,7 +69,7 @@ p{
   font-size: 1.13rem;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 600px) {
   .who{
     width: 90vw;
   }
