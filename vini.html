@@ -35,7 +35,7 @@
             <div class="glass-grid" id="cremant"></div>
         </div>
          <div class="by-glass-section">
-            <h2 class="">Bollicine italiane</h2>
+            <h2 class="">Bollicine</h2>
             <div class="glass-grid" id="bollicine"></div>
         </div>
         
@@ -270,7 +270,21 @@
                 div.className = 'glass-item';
                 div.innerHTML = `
                     <div class="glass-wine" style="text-align: left;">${vino.nome}</div>
-                    <div class="glass-producer" style="text-align: left;"><b>Produttore: </b>${vino.produttore}</div>
+                    <div class="glass-producer" style="text-align: left;padding-top:"><b>Produttore: </b>${vino.produttore}</div>
+                    <div class="glass-producer" style="text-align: left;"><b>Vitigno: </b>${vino.vitigni}</div>
+                    <div class="glass-price" style="text-align: right;">${vino.prezzo}</div>
+                `;
+                container.appendChild(div);
+            });
+        }
+        function renderRegionalBottleWines() {
+            const container = document.getElementById('bianchi-italiani');
+            bollicine.forEach(vino => {
+                const div = document.createElement('div');
+                div.className = 'glass-item';
+                div.innerHTML = `
+                    <div class="glass-wine" style="text-align: left;">${vino.nome}</div>
+                    <div class="glass-producer" style="text-align: left;padding-top:"><b>Produttore: </b>${vino.produttore}</div>
                     <div class="glass-producer" style="text-align: left;"><b>Vitigno: </b>${vino.vitigni}</div>
                     <div class="glass-price" style="text-align: right;">${vino.prezzo}</div>
                 `;
