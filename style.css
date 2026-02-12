@@ -280,8 +280,9 @@ tbody tr:hover {
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            margin: 30px 0 20px;
-            color: #626c71;
+            margin: 0px 0 20px;
+            /*color: #626c71; */
+            color: #242627;
         }
 
 

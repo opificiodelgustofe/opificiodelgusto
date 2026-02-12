@@ -35,11 +35,27 @@
             <div class="glass-grid" id="cremant"></div>
         </div>
          <div class="by-glass-section">
-            <h2 class="">Bollicine</h2>
+            <h2 class="">Bollicine Italiane</h2>
             <div class="glass-grid" id="bollicine"></div>
         </div>
+        <div class="by-glass-section">
+            <h2 class="">Bianchi Regionali</h2>
+            <div class="glass-grid" id="bianchi-italiani"></div>
+        </div>
+        <div class="by-glass-section">
+            <h2 class="">Bianchi Esteri</h2>
+            <div class="glass-grid" id="bianchi-esteri"></div>
+        </div>
+        <div class="by-glass-section">
+            <h2 class="">Rossi Italiani</h2>
+            <div class="glass-grid" id="rossi-italiani"></div>
+        </div>
+        <div class="by-glass-section">
+            <h2 class="">Rossi Esteri</h2>
+            <div class="glass-grid" id="rossi-esteri"></div>
+        </div>
         
-        <p><a href="https://drive.google.com/file/d/1SzshUpLuMcGaymmN-ZUHCQ6ZFQIi3BNT/view?usp=drive_link" class="logoa">Altri vini</a></p> 
+        <p><a href="https://drive.google.com/file/d/1SzshUpLuMcGaymmN-ZUHCQ6ZFQIi3BNT/view?usp=drive_link" class="logoa">altri vini</a></p> 
 <!-- 
           
         <section class="section">
@@ -136,17 +152,20 @@
         ];
 
         const bollicine = [
-            { nome: 'Prosecco Conegliano Valdobbiadene DOCG Con alti', produttore: 'BELLENDA, Vittorio Veneto (TV)', anno: '', vitigni: 'Glera', prezzo: '€ 27' },
-            { nome: 'Prosecco Conegliano Valdobbiadene DOCG Sei Uno X-Brut', produttore: 'BELLENDA, Vittorio Veneto (TV)', anno: '', vitigni: 'Glera', prezzo: '€ 33' },
+            { nome: 'Prosecco Conegliano Valdobbiadene DOCG<br>Con alti', produttore: 'BELLENDA, Vittorio Veneto (TV)', anno: '', vitigni: 'Glera', prezzo: '€ 27' },
+            { nome: 'Prosecco Conegliano Valdobbiadene DOCG<br>Sei Uno X-Brut', produttore: 'BELLENDA, Vittorio Veneto (TV)', anno: '', vitigni: 'Glera', prezzo: '€ 33' },
             { nome: 'Open Dosaggio Zero', produttore: 'SOLOUVA, Erbusco (BS)', anno: '', vitigni: 'Pinot Nero', prezzo: '€ 38' },
             { nome: 'Franciacorta Brut', produttore: 'SOLOUVA, Erbusco (BS)', anno: '', vitigni: 'Chardonnay', prezzo: '€ 41' },
             { nome: 'Trento DOC Extra Brut', produttore: 'CASTEL NOARNA, Nogaredo (TN)', anno: '', vitigni: 'Chardonnay', prezzo: '€ 47' },
             { nome: 'Terzavia Brut Nature', produttore: 'MARCO DE BARTOLI, Samperi-Marsala (TP)', anno: '', vitigni: 'Grillo', prezzo: '€ 52' }
         ];
 
+
+
+
         const bianchiItaliani = {
             'EMILIA ROMAGNA': [
-                { nome: 'Tre Uve', produttore: 'CORTE MADONNINA, Codigoro (FE)', anno: '', vitigni: 'Incrocio Manzoni, Sauvignon, Trebbiano', prezzo: '€ 24' },
+                { nome: 'Tre Uve', produttore:'CORTE MADONNINA, Codigoro (FE)', anno: '', vitigni: 'Incrocio Manzoni, Sauvignon, Trebbiano', prezzo: '€ 24' },
                 { nome: 'L\'Animo', produttore: 'TENUTA SAIANO, Poggio Torriana (RN)', anno: '', vitigni: 'Grechetto Gentile', prezzo: '€ 34' }
             ],
             'PIEMONTE': [
@@ -277,20 +296,25 @@
                 container.appendChild(div);
             });
         }
-        function renderRegionalBottleWines() {
-            const container = document.getElementById('bianchi-italiani');
-            bollicine.forEach(vino => {
+        function renderRegionalBottleWines(data, containerId) {
+            const container = document.getElementById(containerId);
+            Object.keys(data).forEach(regione => {
+               
+                data[regione].forEach(vino => {
                 const div = document.createElement('div');
                 div.className = 'glass-item';
-                div.innerHTML = `
+                div.innerHTML = `<h3 class="subsection-title">${regione}</h3>
                     <div class="glass-wine" style="text-align: left;">${vino.nome}</div>
                     <div class="glass-producer" style="text-align: left;padding-top:"><b>Produttore: </b>${vino.produttore}</div>
                     <div class="glass-producer" style="text-align: left;"><b>Vitigno: </b>${vino.vitigni}</div>
                     <div class="glass-price" style="text-align: right;">${vino.prezzo}</div>
                 `;
+
                 container.appendChild(div);
             });
+        });
         }
+        
 /*
         function renderTable(data, tbodyId) {
             const tbody = document.getElementById(tbodyId);
@@ -349,7 +373,10 @@
         renderBottleWines();
         renderBottleWinesCremant();
         renderBottleWinesBollicine();
-
+        renderRegionalBottleWines(bianchiItaliani, 'bianchi-italiani');
+        renderRegionalBottleWines(bianchiEsteri, 'bianchi-esteri');
+        renderRegionalBottleWines(rossiItaliani, 'rossi-italiani');
+        renderRegionalBottleWines(rossiEsteri, 'rossi-esteri');
         /*
         renderTable(champagne, 'champagne');
         renderTable(cremant, 'cremant');
