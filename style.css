@@ -31,6 +31,24 @@ p{
   font-size: 1.2rem;
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 33px;
+  background-color: transparent;
+  transition: all ease-in-out .4s;
+}
+#myBtn:hover{
+  color: #a2b7d4;
+  transition: all ease-in-out .4s;
+}
+
 /* Sezioni di contenuto normali */
 .section {
   padding: 80px 20px;
@@ -184,14 +202,32 @@ a{
   box-shadow: 0px 4px 6px rgba(51, 75, 107, 0.4);
   transition: all 0.6s;
 }
-
+a{
+  text-decoration: none;
+}
 a:hover{
   background-color: #fff;
   color: #292728;
   box-shadow: 0px 1px 1px rgba(51, 75, 107, 0.4);
   transition: all 0.6s;
+  text-decoration: none
 }
-
+.menuselect{
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center; 
+}
+.msh3{
+  color: #fff;
+  transition: all ease-in-out .6s;
+}
+.msh3:hover{
+  background-color: #292728;
+  color: #a2b7d4;
+  text-decoration: none;
+  box-shadow: none;
+}
 .menu{
   
   font-family: "Poiret One", sans-serif;

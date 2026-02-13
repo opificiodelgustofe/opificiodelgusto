@@ -7,19 +7,36 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <title>Opificio del Gusto</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="body"><a href="index.html">
-    
-  <div class="title">
-  </div></a>
-    <div class="menu">
-      <h1 style="text-align: center;">MENU</h1>
-      </div>
-  <section class="sectionprimi">
+<body class="body">
+  
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class='fa fa-hand-pointer-o' style='font-size:36px'></i>
+  </button>
 
+  <a href="index.html">
+    <div class="title">
+    </div>
+  </a>
+  <div class="menu">
+    <h1 style="text-align: center;">MENU</h1><br>
+    <p class="menuselect">
+      <a href="#antipasti" class="msh3">Antipasti</a> ~ 
+      <a href="#primipiatti" class="msh3">Primi piatti</a> ~ 
+      <a href="#secondipiatti" class="msh3">Secondi piatti</a> ~ 
+      <a href="#unosguardoalterritorio" class="msh3">Uno Sguardo al Territorio</a> ~ 
+      <a href="#dolci" class="msh3">Dolci</a> ~ 
+      <a href="#vinidolci" class="msh3">Vini dolci</a>
+        
+    </p>
+  </div>
+
+  <section class="sectionprimi">
     <h2>MENU DEGUSTAZIONE</h2>
 <p></p>
     <h2>Avventura</h2>
@@ -48,7 +65,7 @@
 <p></p>  
     <h2>ALLA CARTA</h2>
 <p></p>
-    <h2>Antipasti</h2>
+    <h2 id="antipasti">Antipasti</h2>
         <p>
           Frolla alla Curcuma, verdure di stagione in consistenze, erborinato<br>
           <p style="font-family: 'Poiret One', sans-serif;font-size: 1.06rem;">12 euro</p>
@@ -71,7 +88,7 @@
         </p>
 <p></p>
 <p></p>
-    <h2>Primi piatti</h2>
+    <h2 id="primipiatti">Primi piatti</h2>
         <p>
           Brodo di verdure e Parmigiano Reggiano in varie consistenze<br>
           <p style="font-family: 'Poiret One', sans-serif;font-size: 1.06rem;">11 euro</p>
@@ -94,7 +111,7 @@
         </p>
 <p></p>
 <p></p>
-    <h2>Secondi piatti</h2>
+    <h2 id="secondipiatti">Secondi piatti</h2>
         <p>
           Uovo in doppia cottura, spinaci, Squacquerone<br>
           <p style="font-family: 'Poiret One', sans-serif;font-size: 1.06rem;">14 euro</p>
@@ -117,7 +134,7 @@
         </p>
 <p></p>
 <p></p>
-    <h2>Uno Sguardo al Territorio</h2>
+    <h2 id="unosguardoalterritorio">Uno Sguardo al Territorio</h2>
         <p>
           Cipolla al forno ripiena di patè di fegatini di pollo<br>
           <p style="font-family: 'Poiret One', sans-serif;font-size: 1.06rem;">12 euro</p>
@@ -132,7 +149,7 @@
         </p>
 <p></p>
 <p></p>
-    <h2>Dolci</h2>
+    <h2 id="dolci">Dolci</h2>
         <p>
           Tarte-tatin di mele con gelato alla vaniglia<br>
           <p style="font-family: 'Poiret One', sans-serif;font-size: 1.06rem;">7 euro</p>
@@ -160,7 +177,7 @@
     </p>
 <p></p>
 <p></p>
-    <h2>Vini Dolci</h2>
+    <h2 id="vinidolci">Vini Dolci</h2>
         <p>
           Maley – Cidre du Saint Bernard<br>
           <p style="font-family: 'Poiret One', sans-serif;font-size: 1.06rem;">7 euro</p>
@@ -195,6 +212,27 @@
   <footer>
     <p>&copy; 2026 Opificio del Gusto</p>
   </footer>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
 </body>
 </html>
