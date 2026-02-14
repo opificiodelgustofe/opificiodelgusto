@@ -49,6 +49,7 @@ p{
   transition: all ease-in-out .4s;
 }
 
+
 /* Sezioni di contenuto normali */
 .section {
   padding: 80px 20px;
@@ -131,7 +132,7 @@ p{
 }
 
 .hero-content {
-  background-image: url('logo.jpeg');
+  background-image: url('logo.png');
   background-position: center;
   height: 100svh;
   background-size: contain;
@@ -221,6 +222,8 @@ a:hover{
 .msh3{
   color: #fff;
   transition: all ease-in-out .6s;
+  display:inline-block;
+  padding: 2px;
 }
 .msh3:hover{
   background-color: #292728;
@@ -228,8 +231,54 @@ a:hover{
   text-decoration: none;
   box-shadow: none;
 }
-.menu{
+
+.menutitle{
+  padding: 0;
+}
+.menutitle2{
+  right: 0;
+  margin-bottom: 4px;
+}
+.menutitle3{
+  right: 0;
+  margin-top: -26px;
+}
+
+.menutitle2::before{
+  border-bottom: 1px solid white;
+	content: '';
+  display: inline-block;
+	right: 0;
+	bottom: 0;
+	width: 0;
+	animation: border_anim2 1s linear forwards;
   
+}
+.menutitle3::before{
+  border-top: 1px solid white;
+	content: '';
+  display: inline-block;
+  
+	right: 0;
+	bottom: 0;
+	width: 0;
+	animation: border_anim2 1s linear forwards;
+  
+}
+
+@keyframes border_anim2 {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
+
+
+
+
+.menu{
   font-family: "Poiret One", sans-serif;
   color: #fff;
   border-radius: 66px 66px 0px 0px;
@@ -249,6 +298,7 @@ a:hover{
   display: flex;
   align-items: center;
   color: #fff;
+  margin-bottom: -50px;
 }
 table{
   margin: 0 auto;
