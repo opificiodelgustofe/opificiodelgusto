@@ -1,0 +1,120 @@
+ <!--  richiamo body html
+            
+            <section class="section">
+                <h2 class="section-title" >Bianchi Italiani</h2>
+                <div id="tabella-vini">
+                <div id="bianchi-italiani"></div></div>
+            </section>
+
+            
+            <section class="section">
+                <h2 class="section-title">Bianchi Esteri</h2>
+                <div id="bianchi-esteri"></div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Rossi Italiani</h2>
+                <div id="rossi-italiani"></div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Rossi Esteri</h2>
+                <div id="rossi-esteri"></div>
+            </section>
+            
+    <table id="tabella-vini">
+        <thead>
+        <tr>
+            <th>Vino</th>
+            <th>Denominazione</th>
+            <th>Anno</th>
+            <th>Bicchiere</th>
+            <th>Bottiglia</th>
+        </tr>
+        </thead>
+        <tbody id="champagne">
+
+        righe generate da JS 
+        const vini = [
+                {
+                    nome: "Chianti Classico",
+                    denom: "DOCG",
+                    anno: "2020",
+                    bicchiere: "6 €",
+                    bottiglia: "24 €"
+                }
+                {
+                    nome: "Prosecco",
+                    denom: "DOC",
+                    anno: "NV",
+                    bicchiere: "5 €",
+                    bottiglia: "20 €"
+                }
+            ];
+        
+        </tbody>
+    </table>-->
+
+/*riga331 fino a 384
+            function renderTable(data, tbodyId) {
+                const tbody = document.getElementById(tbodyId);
+                data.forEach(vino => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td><span class="wine-name">${vino.nome}</span></td>
+                        <td><span class="producer">${vino.produttore}</span></td>
+                        <td><span class="vintage">${vino.anno}</span></td>
+                        <td><span class="grapes">${vino.vitigni}</span></td>
+                        <td><span class="price">${vino.prezzo}</span></td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+            }
+
+            function renderRegionalWines(data, containerId) {
+                const container = document.getElementById(containerId);
+                Object.keys(data).forEach(regione => {
+                    const div = document.createElement('div');
+                    div.innerHTML = `<h3 class="subsection-title">${regione}</h3>`;
+                    
+                    const table = document.createElement('table');
+                    table.innerHTML = `
+                        <thead>
+                            <tr>
+                                <th>Vino</th>
+                                <th>Produttore / Zona</th>
+                                <th>Anno</th>
+                                <th>Vitigni</th>
+                                <th>Prezzo</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    `;
+                    
+                    const tbody = table.querySelector('tbody');
+                    data[regione].forEach(vino => {
+                        const tr = document.createElement('tr');
+                        tr.innerHTML = `
+                            <td><span class="wine-name">${vino.nome}</span></td>
+                            <td><span class="producer">${vino.produttore}</span></td>
+                            <td><span class="vintage">${vino.anno}</span></td>
+                            <td><span class="grapes">${vino.vitigni}</span></td>
+                            <td><span class="price">${vino.prezzo}</span></td>
+                        `;
+                        tbody.appendChild(tr);
+                    });
+                    
+                    div.appendChild(table);
+                    container.appendChild(div);
+                });
+            }
+    */
+
+    /* 340 347
+            renderTable(champagne, 'champagne');
+            renderTable(cremant, 'cremant');
+            renderTable(bollicine, 'bollicine');
+            renderRegionalWines(bianchiItaliani, 'bianchi-italiani');
+            renderRegionalWines(bianchiEsteri, 'bianchi-esteri');
+            renderRegionalWines(rossiItaliani, 'rossi-italiani');
+            renderRegionalWines(rossiEsteri, 'rossi-esteri'); */
