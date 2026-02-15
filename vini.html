@@ -8,13 +8,19 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
         <link rel="stylesheet" href="style.css">
         <title>Opificio del Gusto</title>
     </head>
 
-    <body class="body"><a href="index.html">
+    <body class="body">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class='fa fa-hand-pointer-o' style='font-size:36px'></i>
+  </button>
+        <a href="index.html">
+        
         <div class="title">
         </div></a>
             <div class="menu">
@@ -274,6 +280,25 @@
             renderRegionalBottleWines(bianchiEsteri, 'bianchi-esteri');
             renderRegionalBottleWines(rossiItaliani, 'rossi-italiani');
             renderRegionalBottleWines(rossiEsteri, 'rossi-esteri');
+
+            let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
         </script>
     </body>
 </html>
