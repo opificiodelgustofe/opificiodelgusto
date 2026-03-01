@@ -31,11 +31,34 @@ p{
   font-size: 1.2rem;
 }
 
+.mapsframe{
+  width: 300px;
+  height: 400px;
+  border:0;
+}
+@media (min-width: 600px) {
+  .mapsframe{
+    height: 400px;
+    width: 500px;
+  }
+}
+@media (max-width: 360px) {
+  .mapsframe{
+    height: 400px;
+    width: 240px;
+  }
+}
+@media (max-width: 310px) {
+  .mapsframe{
+    height: 300px;
+    width: 210px;
+  }
+}
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 80px;
-  right: 30px;
+  bottom: 78px;
+  right: 10px;
   z-index: 99;
   border: none;
   outline: none;
@@ -363,108 +386,108 @@ tbody tr:hover {
 }
 
 
-        .section-title {
-            font-size: 1.6rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 30px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #a7a9a9;
-        }
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #a7a9a9;
+}
 
-        .subsection-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin: 0px 0 20px;
-            /*color: #626c71; */
-            color: #242627;
-        }
+.subsection-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0px 0 20px;
+    /*color: #626c71; */
+    color: #242627;
+}
 
 
-        .wine-name {
-            font-weight: 600;
-            color: #000000;
-        }
+.wine-name {
+    font-weight: 600;
+    color: #000000;
+}
 
-        .producer {
-            color: #626c71;
-            font-size: 1rem;
-        }
+.producer {
+    color: #626c71;
+    font-size: 1rem;
+}
 
-        .grapes {
-            color: #777c7c;
-            font-style: italic;
-            font-size: 1rem;
-        }
+.grapes {
+    color: #777c7c;
+    font-style: italic;
+    font-size: 1rem;
+}
 
-        .price {
-            font-weight: 600;
-            color: #3a3a3a;
-            white-space: nowrap;
-        }
+.price {
+    font-weight: 600;
+    color: #3a3a3a;
+    white-space: nowrap;
+}
 
-        .vintage {
-            color: #626c71;
-            font-size: 1rem;
-        }
+.vintage {
+    color: #626c71;
+    font-size: 1rem;
+}
 
-        .by-glass-section {
-            background: #fafafc;
-            padding: 30px;
-            border-radius: 66px;
-            margin-bottom: 40px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
+.by-glass-section {
+    background: #fafafc;
+    padding: 30px;
+    border-radius: 66px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
 
-        .by-glass-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 25px;
-            text-align: center;
-        }
+.by-glass-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 25px;
+    text-align: center;
+}
 
-        .glass-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
+.glass-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
 
-        .glass-item {
-            padding-top: 20px;
-            padding-left: 18px;
-            padding-right: 18px;
-            padding-bottom: 20px;
-            background-color: #fff;
-            border: 1px solid #f5f5f5;
-            border-radius: 33px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            transition: border-color 0.8s;
-        }
+.glass-item {
+    padding-top: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #f5f5f5;
+    border-radius: 33px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: border-color 0.8s;
+}
 
-        .glass-item:hover {
-            border-color: #a2b7d4;
-            background: #fff;
-        }
+.glass-item:hover {
+    border-color: #a2b7d4;
+    background: #fff;
+}
 
-        .glass-wine {
-            font-weight: 600;
-            margin-bottom: 5px;
-            color: #000000;
-        }
+.glass-wine {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #000000;
+}
 
-        .glass-producer {
-            font-size: 0.85rem;
-            color: #626c71;
-            margin-bottom: 8px;
-        }
+.glass-producer {
+    font-size: 0.85rem;
+    color: #626c71;
+    margin-bottom: 8px;
+}
 
-        .glass-price {
-            font-weight: 600;
-            color: #3b3b3b;
-            font-size: 1.1rem;
-        }
+.glass-price {
+    font-weight: 600;
+    color: #3b3b3b;
+    font-size: 1.1rem;
+}
