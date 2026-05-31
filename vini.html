@@ -30,7 +30,7 @@
             </div>
             <h1 style="text-align: center;" class="menutitle3"></h1>
             <p class="menuselect">
-            ~ <a href="#vinialcalice" class="msh3">Vini al Calice</a> ~<br>
+<!--        ~ <a href="#vinialcalice" class="msh3">Vini al Calice</a> ~<br> -->
             ~ <a href="#bottiglieChampagne" class="msh3">Champagne</a> ~ <a href="#bottiglieCremant" class="msh3">Cremant</a> ~ <br>
             ~ <a href="#bottiglieBollicine" class="msh3">Bollicine Italiane</a> ~<br>
             ~ <a href="#bottigliebianchiitaliani" class="msh3">Bianchi Italiani</a> ~ <a href="#bottigliebianchiesteri" class="msh3">Bianchi Esteri</a> ~<br>
@@ -41,10 +41,10 @@
         <section class="sectionprimi">
             <div data-aos="fade-zoom-in" data-aos-duration="800" data-aos-easing="ease-in">
                 <div id="carta-vini">
-                    <div class="by-glass-section" id="vinialcalice">
+<!--                <div class="by-glass-section" id="vinialcalice">
                         <h2 class="">Vini al Calice</h2>
-                        <div class="glass-grid" id="vini-calice"></div>
-                    </div> 
+                       <div class="glass-grid" id="vini-calice"></div>
+-->                 </div>
                     <div class="by-glass-section" id="bottiglieChampagne">
                             <h2 class="">Champagne</h2>
                             <div class="glass-grid" id="champagne"></div>
@@ -73,7 +73,7 @@
                         <h2 class="">Rossi Esteri</h2>
                         <div class="glass-grid" id="rossi-esteri"></div>
                     </div>
-                        <p><a href="https://drive.google.com/file/d/1bSqU85dX-l6_D0E5wen6ieLFve3eX39s/view?usp=drive_link" label="external link" style="text-decoration: none;color: black;">altri vini</a></p> 
+                        <p><a href="https://drive.google.com/file/d/1w85audsDKuI7NfUlO5pQqJ-eZrHzWjAJ/view" label="external link" style="text-decoration: none;color: black;">altri vini</a></p> 
                         <p></p>
                         <p><a href="menu.html" class="logoa">il nostro menù</a></p> 
 
@@ -86,7 +86,7 @@
         </footer>
         <script>
             AOS.init();
-            const viniCalice = [
+/*          const viniCalice = [
                 { nome: 'Prosecco Conegliano-Valdobbiadene DOCG', produttore: 'SeiUno Bellenda', prezzo: '€ 7' },
                 { nome: 'Blanquette de Limoux Brut Nature', produttore: 'Domaine de Mouscaillo', prezzo: '€ 10' },
                 { nome: 'Piccolo Derthona', produttore: 'Vigneti Massa', prezzo: '€ 8' },
@@ -95,96 +95,119 @@
                 { nome: 'Forestieri Rosso', produttore: 'I Forestieri', prezzo: '€ 8' },
                 { nome: 'Flavino', produttore: 'La Palazzetta', prezzo: '€ 7' }
             ];
-
+*/
             const champagne = [
-                { nome: 'Réserve Brut', produttore: 'BERECHE ET FILS, Montagne de Reims, Le Craon de Ludes', anno: '', vitigni: 'Pinot Nero, Chardonnay, Meunier', prezzo: '€ 120' },
+                { nome: 'Cuvèe Terre', produttore: "AUGUSTIN, Montagne de Reims, Avenay-Val-D’Or", anno: '', vitigni: 'Pinot Nero, Chardonnay, Meunier', prezzo: '€ 80' },
                 { nome: 'Brut Transmission', produttore: 'VIRGINIE T., Montagne de Reims, Verzenay', anno: '', vitigni: 'Pinot Nero, Chardonnay, Meunier', prezzo: '€ 79' },
                 { nome: 'Les Meslaines X-Brut G. Cru', produttore: 'LAMIABLE, Montagne de Reims, Tours-sur-Marne', anno: '2016', vitigni: 'Pinot Nero', prezzo: '€ 94' },
+                { nome: 'Shaman 22', produttore: 'MARGUET, Montagne de Reims, Ambonnay', anno: '', vitigni: 'Pinot Nero, Chardonnay', prezzo: '€ 140' },
                 { nome: 'Les Arpents', produttore: 'MAURICE CHOPPIN, Vallée de la Marne, Damery', anno: '', vitigni: 'Meunier, Chardonnay, Pinot Nero', prezzo: '€ 90' },
-                { nome: 'La Trempette', produttore: 'AURELIEN LEMAIRE, Vallée de la Marne, Boursault', anno: '2022', vitigni: 'Chardonnay', prezzo: '€ 140' },
-                { nome: 'Original Oger Grand Cru', produttore: 'VAUVERSIN, Cote de Blancs, Oger', anno: '', vitigni: 'Chardonnay', prezzo: '€ 102' }
+                { nome: 'Original Oger Grand Cru', produttore: 'VAUVERSIN, Cote de Blancs, Oger', anno: '', vitigni: 'Chardonnay', prezzo: '€ 85' }
             ];
 
             const cremant = [
-                { nome: "Crémant d'Alsace Extra Brut", produttore: 'ANDRE ET LUCAS RIEFFEL, Alsazia, Mittelbergheim', anno: '2022', vitigni: 'Riesling, Auxerrois, P.Gris', prezzo: '€ 50' },
-                { nome: 'Mr. Pink', produttore: 'ANDRE ET LUCAS RIEFFEL, Alsazia, Mittelbergheim', anno: '2022', vitigni: 'Pinot Nero', prezzo: '€ 55'  },
-                { nome: 'Crèmant de Limoux Brut Nature', produttore: 'DOMAINE DE MOUSCAILLO, Languedoc-Rousillon, Roquetaillade', anno: '', vitigni: 'Chardonnay', prezzo: '€ 52' },
-                { nome: 'Lune Noire Extra Brut', produttore: 'DOMAINE OINEA, Grecia, Aminteo', anno: '2021', vitigni: 'Xinomavro', prezzo: '€ 47' },
-                { nome: 'Blanc de Blanc Brut Nature', produttore: 'WEINGUT SCHODL', anno: '', vitigni: 'P. Blanc', prezzo: '€ 64' }
+                { nome: "Crémant d'Alsace Extra Brut", produttore: 'ANDRE ET LUCAS RIEFFEL, Alsazia, Mittelbergheim', anno: '2022', vitigni: 'Riesling, Auxerrois, P.Gris', prezzo: '€ 47' },
+                { nome: 'Mr. Pink', produttore: 'ANDRE ET LUCAS RIEFFEL, Alsazia, Mittelbergheim', anno: '2022', vitigni: 'Pinot Nero', prezzo: '€ 50'  },
+                { nome: 'Crèmant du Jura Brut Nature', produttore: 'Crèmant du Jura Brut Nature', anno: '2020', vitigni: 'Chardonnay', prezzo: '€ 75' },
+                { nome: 'Crèmant du Jura Blanc de Noirs', produttore: 'DOMAINE TISSOT. Jura, Montigny-Lès-Arsures', anno: '2021/2022', vitigni: 'Pinot Nero', prezzo: '€ 80' },
+                { nome: 'Chut… Derain Vin Mousseaux', produttore: 'DOMAINE DERAIN, Borgogna, Saint-Aubin', anno: '', vitigni: 'Aligotè', prezzo: '€ 60' },
+                { nome: 'Crèmant de Limoux Brut Nature', produttore: 'DOMAINE DE MOUSCAILLO, Languedoc-Rousillon, Roquetaillade', anno: '', vitigni: 'Chardonnay', prezzo: '€ 40' },
+                { nome: 'Lune Noire Extra Brut', produttore: 'DOMAINE OINEA, Grecia, Aminteo', anno: '2021', vitigni: 'Xinomavro', prezzo: '€ 38' },
+                { nome: 'Lune Rosè Extra Brut', produttore: 'DOMAINE OINEA, Grecia, Aminteo', anno: '2021', vitigni: 'Xinomavro', prezzo: '€ 44' },
+                { nome: 'Blanc de Blanc Brut Nature', produttore: 'DWEINGUT SCHODL', anno: '', vitigni: 'P. Blanc', prezzo: '€ 55' }
             ];
 
             const bollicine = [
-                { nome: 'Prosecco Conegliano Valdobbiadene DOCG<br>ConAlti', produttore: 'BELLENDA, Vittorio Veneto (TV)', anno: '2023', vitigni: 'Glera', prezzo: '€ 27' },
-                { nome: 'Prosecco Conegliano Valdobbiadene DOCG<br>Sei Uno X-Brut', produttore: 'BELLENDA, Vittorio Veneto (TV)', anno: '2022', vitigni: 'Glera', prezzo: '€ 34' },
-                { nome: 'Open Dosaggio Zero', produttore: 'SOLOUVA, Erbusco (BS)', anno: '', vitigni: 'Pinot Nero', prezzo: '€ 43' },
-                { nome: 'Franciacorta Brut', produttore: 'SOLOUVA, Erbusco (BS)', anno: '', vitigni: 'Chardonnay', prezzo: '€ 48' },
-                { nome: 'Trento DOC Extra Brut', produttore: 'CASTEL NOARNA, Nogaredo (TN)', anno: '2018', vitigni: 'Chardonnay', prezzo: '€ 54' },
-                { nome: 'Terzavia Brut Nature', produttore: 'MARCO DE BARTOLI, Samperi-Marsala (TP)', anno: '2022', vitigni: 'Grillo', prezzo: '€ 64' },
-                { nome: 'Mira Metodo Classico', produttore: 'PORTA DEL VENTO (TP)', anno: '', vitigni: 'Catarratto', prezzo: '€ 61' }
+                { nome: 'Vino Frizzante ConAlti', produttore: 'BELLENDA, Vittorio Veneto (TV)', anno: '2023', vitigni: 'Glera', prezzo: '€ 26' },
+                { nome: 'Prosecco Conegliano Valdobbiadene DOCG<br>Sei Uno X-Brut', produttore: 'BELLENDA, Vittorio Veneto (TV)', anno: '2022', vitigni: 'Glera', prezzo: '€ 30' },
+                { nome: 'Open Dosaggio Zero', produttore: 'SOLOUVA, Erbusco (BS)', anno: '', vitigni: 'Pinot Nero', prezzo: '€ 38' },
+                { nome: 'Franciacorta Brut', produttore: 'SOLOUVA, Erbusco (BS)', anno: '', vitigni: 'Chardonnay', prezzo: '€ 41' },
+                { nome: 'Franciacorta Rosè', produttore: 'SOLOUVA, Erbusco (BS)', anno: '', vitigni: 'Chardonnay', prezzo: '€ 57' },
+                { nome: 'Belle Dosaggio Zero', produttore: "CA’ LOJERA, Sirmione (BS)", anno: '2018', vitigni: 'Trebbiano di Lugana', prezzo: '€ 40' },
+                { nome: 'Trento Extra Brut', produttore: 'CASTEL NOARNA, Nogaredo (TN)', anno: '2018', vitigni: 'Chardonnay', prezzo: '€ 45' },
+                { nome: 'Terzavia Metodo Classico Brut Nature', produttore: 'MARCO DE BARTOLI, Samperi-Marsala (TP)', anno: '2022', vitigni: 'Grillo', prezzo: '€ 55' },
+                { nome: 'Mira Metodo Classico', produttore: 'PORTA DEL VENTO, Camporeale (PA)', anno: '', vitigni: 'Catarratto', prezzo: '€ 51' }
             ];
 
             const bianchiItaliani = {
                 'EMILIA ROMAGNA': [
-                    { nome: 'Tre Uve', produttore:'CORTE MADONNINA, Codigoro (FE)', anno: '2024', vitigni: 'Incrocio Manzoni, Sauvignon, Trebbiano', prezzo: '€ 24' },
-                    { nome: "L'Animo", produttore: 'TENUTA SAIANO, Poggio Torriana (RN)', anno: '2024', vitigni: 'Grechetto Gentile', prezzo: '€ 34' }
+                    { nome: 'Tre Uve', produttore:'CORTE MADONNINA, Codigoro (FE)', anno: '2024', vitigni: 'Incrocio Manzoni, Sauvignon, Trebbiano', prezzo: '€ 24' }
                 ],
                 'PIEMONTE': [
-                    { nome: 'Piccolo Derthona', produttore: 'VIGNETI MASSA, Monleale (AL)', anno: '2025', vitigni: 'Timorasso', prezzo: '€ 32' },
-                    { nome: 'Derthona', produttore: 'VIGNETI MASSA, Monleale (AL)', anno: '2024', vitigni: 'Timorasso', prezzo: '€ 43' }
+                    { nome: 'Piccolo Derthona', produttore: 'VIGNETI MASSA, Monleale (AL)', anno: '2025', vitigni: 'Timorasso', prezzo: '€ 31' },
+                    { nome: 'Derthona', produttore: 'VIGNETI MASSA, Monleale (AL)', anno: '2024', vitigni: 'Timorasso', prezzo: '€ 38' },
+                    { nome: 'Alea', produttore: 'CASCINA EBREO, Novello (CN)', anno: '2021', vitigni: 'Malvasia Moscata', prezzo: '€ 40' },
                 ],
                 'LOMBARDIA': [
-                    { nome: 'Tana della Lupa', produttore: "CA' LOJERA, Rovizza di Sirmione (BS)", anno: '2024', vitigni: 'Turbiana di Lugana', prezzo: '€ 31' },
-                    { nome: 'Riserva del Lupo', produttore: "CA' LOJERA, Rovizza di Sirmione (BS)", anno: '2021', vitigni: 'Turbiana di Lugana', prezzo: '€ 43' }
+                    { nome: 'Lugana', produttore: "CA’ LOJERA, Rovizza di Sirmione (BS)", anno: '2025', vitigni: 'Trebbiano di Lugana)', prezzo: '€ 28' },
+                    { nome: 'Riserva del Lupo', produttore: "CA' LOJERA, Rovizza di Sirmione (BS)", anno: '2021', vitigni: 'Turbiana di Lugana', prezzo: '€ 36' }
                 ],
                 'TRENTINO ALTO ADIGE': [
                     { nome: 'Aromatta', produttore: 'VILLA PERSANI, Pressano (TN)', anno: '2021', vitigni: 'Vitigni Resistenti', prezzo: '€ 34' },
-                    { nome: 'Riesling', produttore: 'HOCHKLAUS, Cornedo (BZ)', anno: '2022', vitigni: 'Riesling', prezzo: '€ 58' }
+                    { nome: 'Gèss', produttore: 'EREDI DI COBELLI ALDO, Sorni di Lavis (TN)', anno: '2022', vitigni: 'Vitigni Resistenti', prezzo: '€ 40' },
+                    { nome: 'Riesling', produttore: 'HOCHKLAUS, Cornedo (BZ)', anno: '2022', vitigni: 'Riesling', prezzo: '€ 54' },
+                    { nome: 'Louis Pinot Grigio', produttore: "DORNACH – PATRICK UCCELLI, Salorno (BZ)", anno: '2023', vitigni: 'P. Grigio', prezzo: '€ 35' }
                 ],
                 'FRIULI VENEZIA GIULIA': [
-                    { nome: 'Friulano', produttore: 'RONCO SEVERO, Prepotto (UD)', anno: '2022', vitigni: 'Friulano', prezzo: '€ 56' },
-                    { nome: 'Ribolla Gialla', produttore: 'RONCO SEVERO, Prepotto (UD)', anno: '2022', vitigni: 'Ribolla Gialla', prezzo: '€ 56' }
+                    { nome: 'Friulano', produttore: 'RONCO SEVERO, Prepotto (UD)', anno: '2022', vitigni: 'Friulano', prezzo: '€ 45' },
+                    { nome: 'Ribolla Gialla', produttore: 'RONCO SEVERO, Prepotto (UD)', anno: '2022', vitigni: 'Ribolla Gialla', prezzo: '€ 45' },
+                    { nome: 'Vitovska', produttore: 'SKERK, Duino Aurisinia (TS)', anno: '2022', vitigni: 'Vitovska', prezzo: '€ 53' },
+                    { nome: 'Malvazija', produttore: 'SKERK, Duino Aurisinia (TS)', anno: '2022', vitigni: 'Malvasia Istriana', prezzo: '€ 53' }
                 ],
-                'PIEMONTE': [
-                    { nome: 'Alea', produttore: 'CASCINA EBREO, Novello (CN)', anno: '2021', vitigni: 'Malvasia Moscata', prezzo: '€ 44' }
+                'VENETO': [
+                    { nome: 'Davvero', produttore: 'CALALTA, Mussolente (VC)', anno: '2024', vitigni: 'Riesling', prezzo: '€ 38' },
+                    { nome: 'Soave Castelcerino', produttore: 'FILIPPI, Castelcerino (VR)', anno: '2024', vitigni: 'Garganega', prezzo: '€ 39' },
+                    { nome: 'Praecipuus', produttore: 'ROENO, Brentino Belluno (VR)', anno: '2023', vitigni: 'Riesling', prezzo: '€ 35' },
+                    { nome: 'Rivoli', produttore: 'ROENO, Brentino Belluno (VR)', anno: '2023', vitigni: 'P. Grigio', prezzo: '€ 43' }
                 ],
                 'TOSCANA': [
-                    { nome: "L'Affacciatoio", produttore: 'GIACOMO BARALDO, San Casciano dei Bagni (SI)', anno: '2023', vitigni: 'Chardonnay', prezzo: '€ 53' }
+                    { nome: "Canna Torta", produttore: 'PODERE LE RIPI, Montalcino (SI)', anno: '2024', vitigni: 'Trebbiano, Malvasia', prezzo: '€ 35' },
+                    { nome: "L'Affacciatoio", produttore: 'GIACOMO BARALDO, San Casciano dei Bagni (SI)', anno: '2024', vitigni: 'Chardonnay', prezzo: '€ 50' },
+                    { nome: "Vermentino", produttore: 'SAN FERDINANDO, Civitella in Val di Chiana (SI)', anno: '2025', vitigni: 'Chardonnay', prezzo: '€ 34' },
+                    { nome: "Forestieri Bianco", produttore: 'I FORESTIERI, Roccatederighi (GR)', anno: '2025', vitigni: 'Vermentino, Trebbiano, Malvasia', prezzo: '€ 29' }
                 ],
                 'ABRUZZO': [
-                    { nome: 'Apollo', produttore: 'AUSONIA, Teramo (TE)', anno: '2023', vitigni: 'Trebbiano', prezzo: '€ 32' }
+                    { nome: 'Apollo', produttore: 'AUSONIA, Teramo (TE)', anno: '2023', vitigni: 'Trebbiano', prezzo: '€ 31' }
                 ],
                 'MARCHE': [
-                    { nome: 'Pistillo', produttore: 'PODERI SAN LAZZARO, Offida (AP)', anno: '2024', vitigni: 'Pecorino', prezzo: '€ 35' },
-                    { nome: '…di Gino', produttore: 'FATTORIA SAN LORENZO, Montecarotto (AN)', anno: '2024', vitigni: 'Verdicchio', prezzo: '€ 31' },
-                    { nome: 'Campo delle Oche', produttore: 'FATTORIA SAN LORENZO, Montecarotto (AN)', anno: '2022', vitigni: 'Verdicchio', prezzo: '€ 42' }
+                    { nome: 'Pistillo', produttore: 'PODERI SAN LAZZARO, Offida (AP)', anno: '2024', vitigni: 'Pecorino', prezzo: '€ 29' },
+                    { nome: '…di Gino', produttore: 'FATTORIA SAN LORENZO, Montecarotto (AN)', anno: '2024', vitigni: 'Verdicchio', prezzo: '€ 30' },
+                    { nome: 'Campo delle Oche', produttore: 'FATTORIA SAN LORENZO, Montecarotto (AN)', anno: '2022', vitigni: 'Verdicchio', prezzo: '€ 43' }
                 ],
-                'LAZIO': [
-                    { nome: 'Malvasia bianca di Candia', produttore: 'IL SAMBUCO, Lanuvio (RM)', anno: '2024', vitigni: 'Malvasia', prezzo: '€ 32' }
+                'UMBRIA': [
+                    { nome: 'Arneto', produttore: 'TENUTA BELLAFONTE, Bevagna (PG)', anno: '2022', vitigni: 'Trebbiano Spoletino', prezzo: '€ 39' }
                 ],
                 'SICILIA': [
-                    { nome: 'Tenuta Valdichiesa', produttore: 'SALVATORE D\'AMICO, Isola di Salina (ME)', anno: '2023', vitigni: 'Catarratto, Inzolia, Malvasia', prezzo: '€ 49' }
+                    { nome: 'Tenuta Valdichiesa', produttore: 'SALVATORE D\'AMICO, Isola di Salina (ME)', anno: '2024', vitigni: 'Catarratto, Inzolia, Malvasia', prezzo: '€ 44' },
+                    { nome: 'Sketta', produttore: 'CANTINA MARILINA, Noto (SR)', anno: '2024', vitigni: 'Grecanico', prezzo: '€ 31' },
+                    { nome: 'Ramì', produttore: 'COS. Vittoria (RG)', anno: '2024', vitigni: 'Grillo, Inzolia', prezzo: '€ 41' },
+                    { nome: 'Catarratto', produttore: 'PORTA DEL VENTO, Camporeale (PA)', anno: '2024', vitigni: 'Catarratto', prezzo: '€ 37' },
+                    { nome: 'Egesta Anfora', produttore: 'ALDO VIOLA, Alcamo (TP)', anno: '2024', vitigni: 'Grillo', prezzo: '€ 48' },
+                    { nome: 'Sole e Vento', produttore: 'MARCO DE BARTOLI, Samperi-Marsala (TP)', anno: '2025', vitigni: 'Zibibbo, Grillo', prezzo: '€ 35' }
                 ]
             };
 
             const bianchiEsteri = {
                 'FRANCIA, BORGOGNA': [
                     { nome: 'Chablis', produttore: 'POMMIER, Chablis, Poincy', anno: '2023', vitigni: 'Chardonnay', prezzo: '€ 57' },
-                    { nome: 'Rully Saint-Jacques', produttore: 'ANTOINE OLIVIER, Santenay, Cote de Beaune', anno: '2023', vitigni: 'Chardonnay', prezzo: '€ 64' }
+                    { nome: 'Bourgogne Blanc “Les 2 Dindes”', produttore: 'ANTOINE OLIVIER, Santenay, Cote de Beaune', anno: '2023', vitigni: 'Chardonnay', prezzo: '€ 52' },
+                    { nome: 'Bourgogne Aligotè Dorè', produttore: 'ARNAUD BOUE, Villars Fontaine, Haut Cotes de Nuits', anno: '2024', vitigni: 'Aliogtè', prezzo: '€ 41' }
                 ],
                 'FRANCIA, JURA': [
-                    { nome: 'Savagnin Cotes du Jura', produttore: 'DOMAINE COURBET, Nevy-sur-Seille', anno: '2020', vitigni: '(Savagnin)', prezzo: '€ 74' }
-                ],
-                'FRANCIA, SUD-OVEST': [
-                    { nome: 'Jurançon Sec Vitatge Vielh', produttore: 'CLOS LAPEYRE, Jurançon', anno: '2021', vitigni: 'Gros Manseng, Petite Manseng, Courbu', prezzo: '€ 53' }
+                    { nome: 'Savagnin Cotes du Jura', produttore: 'DOMAINE COURBET, Nevy-sur-Seille', anno: '2020', vitigni: 'Savagnin', prezzo: '€ 62' },
+                    { nome: 'Chardonnay “Les Isles”', produttore: 'DOMAINE COURBET, Nevy-sur-Seille', anno: '2022', vitigni: 'Chardonnay', prezzo: '€ 66' }
                 ],
                 'FRANCIA, VALLE DELLA LOIRA': [
-                    { nome: 'Muscadet Indigéne', produttore: 'NICOLAS REAU, Sainte-Redagonde Anjou', anno: '2022', vitigni: 'Melon de Bourgogne', prezzo: '€ 43' }
+                    { nome: 'Muscadet Indigéne', produttore: 'NICOLAS REAU, Sainte-Redagonde Anjou', anno: '2022', vitigni: 'Melon de Bourgogne', prezzo: '€ 41' },
+                    { nome: 'La Roche', produttore: 'JEAN-CHRISTOPHE GARNIER, Anjou', anno: '', vitigni: 'Chenin', prezzo: '€ 60' },
+                    { nome: 'Granite', produttore: 'DOMAINE DE L’ECU, Le Landreau', anno: '2024', vitigni: 'Melon de Bourgogne', prezzo: '€ 45' },
+                    { nome: 'Quatre Mains', produttore: 'LA GRANGE TIPHAINE, Montlouis-sur-Loire, Touraine', anno: '2023', vitigni: 'Sauvignon', prezzo: '€ 65' }
                 ],
                 'AUSTRIA, Kamptal': [
-                    { nome: 'Vereinter Schatz White', produttore: 'MARTIN ARNDORFER, Kamptal', anno: '2024', vitigni: 'Gruner Veltliner, Riesling', prezzo: '€ 39' }
+                    { nome: 'Vereinter Schatz White', produttore: 'MARTIN ARNDORFER, Kamptal', anno: '2024', vitigni: 'Gruner Veltliner, Riesling', prezzo: '€ 36' }
                 ],
                 'GERMANIA': [
-                    { nome: 'Riesling', produttore: 'MARKUS SCHOLTES, Neumagen-Dhron, Mosella', anno: '2024', vitigni: 'Riesling', prezzo: '€ 37' }
+                    { nome: 'Riesling Kabinett', produttore: 'MARKUS SCHOLTES, Neumagen-Dhron, Mosella', anno: '2022', vitigni: 'Riesling', prezzo: '€ 46' }
                 ]
             };
 
@@ -195,45 +218,69 @@
                     { nome: 'Cabernetico', produttore: 'TENUTA SAIANO, Poggio Torriana (RN)', anno: '2023', vitigni: 'Cabernet Franc', prezzo: '€ 36' }
                 ],
                 'PIEMONTE': [
-                    { nome: 'Natalin', produttore: 'IULI, Montaldo di Cerrina (AL)', anno: '2023', vitigni: 'Grignolino', prezzo: '€ 40' },
-                    { nome: 'Rossore', produttore: 'IULI, Montaldo di Cerrina (AL)', anno: '2021', vitigni: 'Barbera', prezzo: '€ 43' },
+                    { nome: 'Natalin', produttore: 'IULI, Montaldo di Cerrina (AL)', anno: '2023', vitigni: 'Grignolino', prezzo: '€ 36' },
+                    { nome: 'Rossore', produttore: 'IULI, Montaldo di Cerrina (AL)', anno: '2021', vitigni: 'Barbera', prezzo: '€ 40' },
+                    { nome: 'Monleale', produttore: 'VIGNETI MASSA, Monleale (AL)', anno: '2013', vitigni: 'Barbera', prezzo: '€ 50' },
                     { nome: 'Langhe Nebbiolo', produttore: 'LUCA MARENCO, Barolo (CN)', anno: '2022', vitigni: 'Nebbiolo', prezzo: '€ 37' },
-                    { nome: "Barolo di Serralunga d'Alba", produttore: "FERDINANDO PRINCIPIANO, Monforte d'Alba (CN)", anno: '2021', vitigni: 'Nebbiolo', prezzo: '€ 71' }
+                    { nome: "Barolo di Serralunga d'Alba", produttore: "FERDINANDO PRINCIPIANO, Monforte d'Alba (CN)", anno: '2021', vitigni: 'Nebbiolo', prezzo: '€ 64' }
                 ],
                 'TOSCANA': [
-                    { nome: 'Flavino', produttore: 'LA PALAZZETTA, Montalcino (SI)', anno: '2024', vitigni: 'Sangiovese', prezzo: '€ 29' },
-                    { nome: 'Forestieri Rosso', produttore: 'I FORESTIERI, Roccastrada (GR)', anno: '2024', vitigni: 'Sangiovese, Ciliegiolo, Grenache', prezzo: '€ 31' },
-                    { nome: 'Girotondo Rosso', produttore: 'I FORESTIERI, Roccastrada (GR)', anno: '2024', vitigni: 'Sangiovese, Malvasia', prezzo: '€ 37' },
-                    { nome: 'Il Pugnale', produttore: 'PODERE GUALANDI, Montespertoli (FI)', anno: '2020', vitigni: 'Cabernet, Foglia Tonda', prezzo: '€ 34' },
+                    { nome: 'Cappuccetto Rosa', produttore: 'PODERE LE RIPI, Montalcino (SI)', anno: '2024', vitigni: 'Sangiovese', prezzo: '€ 33' },
+                    { nome: 'Rosso di Montalcino Sogni e Follia', produttore: 'PODERE LE RIPI, Montalcino (SI)', anno: '2021', vitigni: 'Sangiovese', prezzo: '€ 50' },
+                    { nome: "Brunello di Montalcino Cielo d’Ulisse", produttore: 'PODERE LE RIPI, Montalcino (SI)', anno: '2020', vitigni: 'Sangiovese', prezzo: '€ 70' },
+                    { nome: "Flavino", produttore: 'LA PALAZZETTA, Montalcino (SI)', anno: '2024', vitigni: 'Sangiovese', prezzo: '€ 29' },
+                    { nome: "Rosso di Montalcino", produttore: 'LA PALAZZETTA, Montalcino (SI)', anno: '2024', vitigni: 'Sangiovese', prezzo: '€ 38' },
+                    { nome: "Forestieri rosso", produttore: 'I FORESTIERI, Roccastrada (GR)', anno: '2024', vitigni: 'Sangiovese, Ciliegiolo, Grenache Cabernet, Trebbiano', prezzo: '€ 31' },
+                    { nome: "Girotondo Rosato", produttore: 'I FORESTIERI, Roccastrada (GR)', anno: '2024', vitigni: 'Sangiovese', prezzo: '€ 37' },
+                    { nome: "Il Pugnale", produttore: 'PODERE LE RIPI, Montalcino (SI)', anno: '2020', vitigni: 'Sangiovese', prezzo: '€ 32' },
                     { nome: '"18,5k" Pinot Nero Nuova Zelanda', produttore: 'GIACOMO BARALDO, San Casciano dei Bagni (SI)', anno: '2022', vitigni: 'Pinot Nero', prezzo: '€ 63' }
                 ],
                 'TRENTINO ALTO ADIGE': [
-                    { nome: 'Dorothy', produttore: 'VILLA PERSANI, Pressano (TN)', anno: '2021', vitigni: 'Schiava', prezzo: '€ 34' }
+                    { nome: 'Dorothy Rosato', produttore: 'VILLA PERSANI, Pressano (TN)', anno: '2021', vitigni: 'Schiava', prezzo: '€ 34' }
                 ],
                 'SICILIA': [
-                    { nome: 'Rosso Federica Riserva', produttore: 'CANTINA MARILINA, Noto (SR)', anno: '2015', vitigni: 'Nero d\'Avola', prezzo: '€ 67' }
+                    { nome: 'Rosso Federica Riserva', produttore: 'CANTINA MARILINA, Noto (SR)', anno: '2015', vitigni: 'Nero d\'Avola', prezzo: '€ 53' },
+                    { nome: 'Frappato', produttore: 'COS, Vittoria (RG)', anno: '2024', vitigni: 'Frappato di Vittoria', prezzo: '€ 38' },
+                    { nome: 'Altroverso', produttore: 'PORTA DEL VENTO, Camporeale (PA)', anno: '2024', vitigni: 'Nerello Mascalese', prezzo: '€ 37' },
+                    { nome: 'Pignatello', produttore: 'BARRACO, Marsala (TP)', anno: '2018', vitigni: 'Pignatello', prezzo: '€ 34' },
+                    { nome: 'Rosammare', produttore: 'BARRACO, Marsala (TP)', anno: '2024', vitigni: 'Nero d\'Avola', prezzo: '€ 35' }
                 ],
                 'SARDEGNA': [
-                    { nome: 'Ghirarda Fittiloghe', produttore: 'VIKEVIKE, Mamoiada (NU)', anno: '2021', vitigni: 'Cannonau', prezzo: '€ 48' }
+                    { nome: 'Ghirarda Fittiloghe', produttore: 'VIKEVIKE, Mamoiada (NU)', anno: '2021', vitigni: 'Cannonau', prezzo: '€ 46' }
                 ]
             };
 
             const rossiEsteri = {
-                'BORGOGNA': [
-                    { nome: "Bourgogne Rouge Cote d'Or", produttore: 'DOMAINE LEJEUNE, Pommard, Cote de Beaune', anno: '2023', vitigni: 'Pinot Nero', prezzo: '€ 64' }
+                'FRANCIA, Borgogna': [
+                    { nome: "Bourgogne Rouge Cote d'Or", produttore: 'DOMAINE LEJEUNE, Pommard, Cote de Beaune', anno: '2023', vitigni: 'Pinot Nero', prezzo: '€ 64' },
+                    { nome: "Cote de Nuits Villages", produttore: 'ARNAUD BOUE, Villars Fontaine, Hautes Cotes de Nuits', anno: '2021', vitigni: 'Pinot Nero', prezzo: '€ 73' },
+                    { nome: "Volnay", produttore: 'MAISON SARNIN-BERRUX, Monthèlie, Cote d’Or', anno: '2019', vitigni: 'Pinot Nero', prezzo: '€ 115' }
                 ],
-                'AUVERGNE': [
+                'FRANCIA, AUVERGNE': [
                     { nome: 'Les Chirouzes', produttore: 'LES TERRES BARIOLEES, Boudes', anno: '2023', vitigni: 'Pinot Nero', prezzo: '€ 80' }
                 ],
-                'VALLE DEL RODANO': [
-                    { nome: 'Saint you', produttore: 'HUGO VERCASSON, Colombier-le-Vieux', anno: '2024', vitigni: 'Syrah', prezzo: '€ 57' }
+                'FRANCIA, Beaujolais': [
+                    { nome: 'Beaujolais Village', produttore: 'DOMAINE DAVID BEAUPERE, Juliénas, Beaujolais', anno: '2023', vitigni: 'Gamay', prezzo: '€ 46' }
                 ],
-                'BREM SUR MER': [
-                    { nome: "Vin d'Antoine", produttore: 'DOMAINE SAINT NICOLAS', anno: '', vitigni: 'Gamay, Negrette', prezzo: '€ 36' }
+                'FRANCIA, Bordeaux': [
+                    { nome: "BdX “Le Jus” Rouge", produttore: 'DOMAINE DE L’A-STEPHANE DERENONCOURT, Sainte Colombe Libournais', anno: '2024', vitigni: 'Merlot, Cabernet Franc', prezzo: '€ 34' },
+                    { nome: "Clos Manou Mèdoc AOC", produttore: 'CLOS MANOU, Saint-Christoly-Mèdoc', anno: '2017', vitigni: 'Cab. Sauvignon, Merlot, Petit Verdot, Cab. Franc', prezzo: '€ 64' }
+                ],
+                 'FRANCIA, Brem sur Mer': [
+                    { nome: 'Vin d’Antoine', produttore: 'DOMAINE SAINT NICOLAS, Yle d’Ilonne', anno: '', vitigni: 'Gamay, Negrette', prezzo: '€ 36' }
+                ],
+                 'FRANCIA, Valle della Loira': [
+                    { nome: 'La Huppe', produttore: 'DOMAINE DU CHAT HUANT, Monthou sur Bièvre', anno: '2021', vitigni: 'Grenache', prezzo: '€ 48' }
+                ],
+                 'GERMANIA': [
+                    { nome: 'Malterdinger Spatburgunder', produttore: 'BERNHARD HUBER, Malterdinger, Baden Wurttemberg', anno: '2023', vitigni: 'Pinot Nero', prezzo: '€ 70' }
+                ],
+                 'ARGENTINA': [
+                    { nome: 'Sin Azufre', produttore: 'BODEGA CHACRA, Mainquè, Patagonia', anno: '2024', vitigni: 'Pinot Nero', prezzo: '€ 78' }
                 ]
             }; 
 
-            function renderGlassWines() {
+   /*       function renderGlassWines() {
                 const container = document.getElementById('vini-calice');
                 viniCalice.forEach(vino => {
                     const div = document.createElement('div');
@@ -245,7 +292,7 @@
                     `;
                     container.appendChild(div);
                 });
-            }
+            } */
             function renderBottleWines() {
                 const container = document.getElementById('champagne');
                 champagne.forEach(vino => {
@@ -307,7 +354,7 @@
             });
             }
             
-            renderGlassWines();
+  //          renderGlassWines();
             renderBottleWines();
             renderBottleWinesCremant();
             renderBottleWinesBollicine();
