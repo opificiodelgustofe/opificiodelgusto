@@ -36,24 +36,7 @@ p{
   height: 400px;
   border:0;
 }
-@media (min-width: 600px) {
-  .mapsframe{
-    height: 400px;
-    width: 500px;
-  }
-}
-@media (max-width: 360px) {
-  .mapsframe{
-    height: 400px;
-    width: 240px;
-  }
-}
-@media (max-width: 310px) {
-  .mapsframe{
-    height: 300px;
-    width: 210px;
-  }
-}
+
 #myBtn {
   display: none;
   position: fixed;
@@ -554,4 +537,173 @@ tbody tr:hover {
   .gallery-subtitle {
     font-size: 1.5rem;
   }
+}
+
+.section.contact{
+  padding-top: 20px;
+}
+
+.split-section{
+  width: 88%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.split-text{
+  flex: 1;
+  text-align: left;
+}
+
+.split-text h2{
+  margin-bottom: 20px;
+}
+
+.split-text p{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.split-image{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.section-photo{
+  width: 100%;
+  max-width: 460px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 33px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+}
+
+.reverse-desktop{
+  flex-direction: row-reverse;
+}
+
+.mapsframe{
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: 300px;
+  border: 0;
+  margin: 20px auto 0 auto;
+}
+
+@media (max-width: 768px){
+  .mapsframe{
+    max-width: 90%;
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px){
+  .split-section,
+  .reverse-desktop{
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .split-text{
+    text-align: center;
+  }
+
+  .split-text p{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .section-photo{
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 768px){
+  .split-section{
+    width: calc(100% - 20px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .who{
+    width: calc(100% - 20px);
+  }
+
+  .split-text p{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section{
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.section,
+.sectionantipasti,
+.sectionprimi{
+  overflow-x: hidden;
+}
+
+@media (min-width: 769px){
+  .split-section{
+    align-items: flex-start;
+  }
+
+  .split-text{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .split-image{
+    flex: 0 0 46%;
+    max-width: 46%;
+  }
+}
+
+@media (min-width: 769px){
+  .split-section{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .split-text{
+    flex: 0 0 48%;
+    max-width: 48%;
+    text-align: left;
+  }
+
+  .split-text .who{
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .split-image{
+    flex: 0 0 40%;
+    max-width: 40%;
+    justify-content: flex-end;
+  }
+
+  .section-photo{
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+
+p,
+.split-text,
+.who{
+  text-align: center;
 }
