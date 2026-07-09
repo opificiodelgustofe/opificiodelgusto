@@ -654,24 +654,8 @@ tbody tr:hover {
 
 @media (min-width: 769px){
   .split-section{
-    align-items: flex-start;
-  }
-
-  .split-text{
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  .split-image{
-    flex: 0 0 46%;
-    max-width: 46%;
-  }
-}
-
-@media (min-width: 769px){
-  .split-section{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     gap: 40px;
   }
