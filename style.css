@@ -538,8 +538,10 @@ tbody tr:hover {
   }
 
   .gallery-grid img {
-    height: 240px;
-  }
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
   .gallery-subtitle {
     font-size: 1.5rem;
@@ -547,17 +549,11 @@ tbody tr:hover {
 }
 
 .gallery-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0;
 }
 
 .gallery-caption {
   margin-top: 10px;
-  font-size: 1rem;
-  color: #292728;
-  text-align: center;
-  padding: 0;
 }
 
 .section.contact{
